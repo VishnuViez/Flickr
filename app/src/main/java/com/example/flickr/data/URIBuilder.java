@@ -36,7 +36,7 @@ public class URIBuilder {
 
     public String toPhotoURI(Photo photo)
     {
-        return "http://farm".concat(String.valueOf(photo.getFarm())).concat(".static.flickr.com/")
+        return "https://farm".concat(String.valueOf(photo.getFarm())).concat(".static.flickr.com/")
                 .concat(photo.getServer()).concat("/").concat(photo.getId())
                 .concat("_").concat(photo.getSecret()).concat(".jpg");
 
